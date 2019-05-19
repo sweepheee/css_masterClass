@@ -24,4 +24,10 @@ ex) 헤더를 만들 때
 
 ```
 
-
+display: flex는 기본적으로 row에 축이 맞춰져있다.<br>
+justify-content는 메인축 정렬을 의미하고<br>
+align-items는 서브축 정렬을 의미한다.<br>
+즉, 기본적으로 row에 메인축이 맞춰져있으므로 justify-content는 row방향(수평) 정렬, align-items는 column방향(수직) 정렬이다.
+<br>
+메인축과 서브축을 바꾸는 css가 존재한다.<br>
+flex-direction : column 을 주게되면 메인축과 서브축이 변경이 된다. 하지만 굳이 필요없고 머리아프므로 특별한 경우가 아니면 사용하지않겠다.
