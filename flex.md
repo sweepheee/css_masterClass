@@ -65,6 +65,6 @@ flex요소를 직접 정렬할 수 있다. 이 경우 flex요소에 align-self: 
 .header ul:first-child {
   align-self: flex-start   /* 위에서도 적었지만 align속성은 서브축을 담당한다. 즉 수직정렬이다. */ 
 }
-
+```
 
 
