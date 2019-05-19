@@ -38,9 +38,21 @@ flex-direction : column 을 주게되면 메인축과 서브축이 변경이 된
 
 display: flex와 같은 레벨에 flex-wrap: wrap 이라는 css를 줄 수 있다.<br>
 해당 css는 디폴트값이 flex-wrap: nowrap 인데 이 코드는 화면을 늘리거나 줄였을때 요소들이 줄바꿈을 할 것인지<br>
-혹은 줄바꿈을 하지않고 width값에 상관없이 줄어들거나 늘어날 것인지를 설정한다.
+혹은 줄바꿈을 하지않고 width값에 상관없이 줄어들거나 늘어날 것인지를 설정한다.<br>
 nowrap의 경우 width가 줄어들기만할 뿐 줄바꿈이 일어나지 않고 wrap의 경우 width가 유지되면서 줄바꿈이 일어난다.
 
+
+---
+
+flex요소 안에 또 flex를 넣을 수 있다. <br>
+즉, flex로 정렬된 박스가 있다고 예를들면 그 박스안의 글자의 위치를 처음, 중간, 끝 위치로 정렬이 필요하다면<br>
+flex요소에 display:flex를 추가하여 정렬할 수 있다
+```
+.header { display: flex; }
+.header ul { 
+  display: flex;
+  justify-content: center;
+}
 
 
 
