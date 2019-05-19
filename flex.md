@@ -53,7 +53,18 @@ flex요소에 display:flex를 추가하여 정렬할 수 있다
   display: flex;
   justify-content: center;
 }
+```
 
+---
+flex요소는 flex를 선언한 부모요소에서 정렬하기도 하지만 <br>
+flex요소를 직접 정렬할 수 있다. 이 경우 flex요소에 align-self: flex-start 등으로 정렬한다.
+```
+.header {
+  display: flex
+}
+.header ul:first-child {
+  align-self: flex-start   /* 위에서도 적었지만 align속성은 서브축을 담당한다. 즉 수직정렬이다. */ 
+}
 
 
 
