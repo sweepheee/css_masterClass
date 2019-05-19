@@ -24,6 +24,8 @@ ex) 헤더를 만들 때
 
 ```
 
+---
+
 display: flex는 기본적으로 row에 축이 맞춰져있다.<br>
 justify-content는 메인축 정렬을 의미하고<br>
 align-items는 서브축 정렬을 의미한다.<br>
@@ -31,3 +33,15 @@ align-items는 서브축 정렬을 의미한다.<br>
 <br>
 메인축과 서브축을 바꾸는 css가 존재한다.<br>
 flex-direction : column 을 주게되면 메인축과 서브축이 변경이 된다. 하지만 굳이 필요없고 머리아프므로 특별한 경우가 아니면 사용하지않겠다.
+
+---
+
+display: flex와 같은 레벨에 flex-wrap: wrap 이라는 css를 줄 수 있다.<br>
+해당 css는 디폴트값이 flex-wrap: nowrap 인데 이 코드는 화면을 늘리거나 줄였을때 요소들이 줄바꿈을 할 것인지<br>
+혹은 줄바꿈을 하지않고 width값에 상관없이 줄어들거나 늘어날 것인지를 설정한다.
+nowrap의 경우 width가 줄어들기만할 뿐 줄바꿈이 일어나지 않고 wrap의 경우 width가 유지되면서 줄바꿈이 일어난다.
+
+
+
+
+
