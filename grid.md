@@ -35,7 +35,7 @@ grid-auto-rows: 60px;
 ```
 grid-template-columns : 10px 15px
 grid-template-rows : 10px 12px
-grid-auto-rows: 60px;
+grid-auto-columns: 60px;
 grid-auto-flow: column;
 
 Ex
@@ -47,8 +47,7 @@ Ex
 ㅁㅁㅁ
 ㅁㅁㅁ 으로 바뀜
 ```
-grid-auto-rows는 기본적으로 row값으로 설정되있지만 column값으로 바꿀 수 있다.(flex-direction과 비슷함)<br>
-grid-auto-flow: column 을 설정하면 grid-auto-rows에 준 값은 column값으로 바뀌면서 모든 박스가 2줄안에 표시된다<br>
-즉, auto-row일땐 한줄에 박스2개만 생성되고 줄바꿈이 일어나던 게 auto-column값으로 바꾸면 옆으로 계속 생성되고 줄바꿈은 한번만 일어난다.<br>
+grid-auto-columns는 기본적으로 row값으로 설정되어있어 column값으로 바꿔서 써야한다.(flex-direction과 비슷함)<br>
+grid-auto-flow: column 을 설정하면 column값으로 바뀌면서 column값에 자동으로 준 값이 들어간다.
 
 
