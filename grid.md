@@ -196,7 +196,7 @@ grid-template-areas는 문자로 지정한 이름값을 item에 grid-area: 이�
 최소한의 공간만 사용하고 줄바꿈을 해버린다. rows로는 실험을 해보진 않았으나 가능하면 auto-columns를 지워야 먹힐듯.<br>
 공간을 최소한 사용하기때문에(즉, rows일 땐 column을 최소한 사용하고 줄바꿈) row가 box안의 컨텐츠 길이 만큼 늘어난다.
 <br>
-
+<
 <h2>7. auto-fit, auto-fill </h2>
 
 <h3>7-1. auto-fit = 가능한 채움.</h3>
