@@ -3,8 +3,11 @@ css grid
 <br>
 <br>
 
-grid-template-columns / grid-template-rows
+1. grid-template-columns / grid-template-rows
 ----
+<hr>
+### 1-1. 기본사용법
+
 ```
 grid-template-columns : 10px
 grid-template-rows : 10px
