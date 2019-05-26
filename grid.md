@@ -20,5 +20,27 @@ grid-template-rows : 10px 12px
 grid-gap: 10px
 ```
  grid사이의 간격(상하좌우)
+<br>
+<br>
 
+```
+grid-template-columns : 10px 15px
+grid-template-rows : 10px 12px
+grid-auto-rows: 60px;
+```
+만약 박스가 4개이상 존재할 때 값을 준 4개 박스 외의 다른 모든 박스를 표시해주고 싶다면 grid-auto-rows 값을 줘서<br>
+4번째박스를 초과하는 박스를 모두 생성할 수 있다. column값은 그대로 10px 15px가 반복되고 줄바꿈이 일어난다.<br>
+이때 grid-auto-rows는 기본적으로 row값으로 설정되있지만 column값으로 바꿀 수 있다.(flex-direction과 비슷함)<br>
+grid-auto-flow: column 을 설정하면 grid-auto-rows에 준 값은 column값으로 바뀌면서 모든 박스가 2줄안에 표시된다<br>
+즉, auto-row일땐 한줄에 박스2개만 생성되고 줄바꿈이 일어나던 게 auto-column값으로 바꾸면 옆으로 계속 생성되고 줄바꿈은 한번만 일어난다.<br>
 
+```
+Ex
+
+ㅁㅁ
+ㅁㅁ
+ㅁㅁ 에서
+
+ㅁㅁㅁ
+ㅁㅁㅁ 으로 바뀜
+```
