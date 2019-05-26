@@ -4,7 +4,6 @@ css grid
 <br>
 
 <h2>1. grid-template-columns / grid-template-rows</h2>
------------------------------------------------
 
 <h3>1-1. 기본사용법</h3>
 
