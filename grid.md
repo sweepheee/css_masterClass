@@ -92,8 +92,40 @@ grid-template-areas는 문자로 지정한 이름값을 item에 grid-area: 이�
 
 
 
+<br>
+<h2>5. fr and repeat</h2>
+
+<h3>5-1. fr = 가능한 자리를 차지해라</h3>
 
 ```
-fr = fraction 가능한 자리를 차지해라
+
+.box1, .box2, .box3, .box4 {
+ //박스 4개 존재
+ 
+ .grid_container {
+  display: grid;
+  grid-auto-rows: 60px;
+  grid-template-columns: 1fr 2fr 1fr 2fr
+ }
+
+```
+박스가 4개 존재하고 박스의 부모요소에 grid-template-columns값을 fr로 줄 수있다. <br>
+4개의 박스니 4개의 fr값을 줬을때 준 값의 비율에 맞춰서 크기가 결정된다.<br>
+즉, 1fr 2fr 1fr 2fr은 2,4번 박스의 크기가 1,3번 박스보다 2배크다.<br>
+
+<h3>h-2. repeat() = 같은 값을 줄 박스설정</h3>
+
 ```
 
+.box1, .box2, .box3, .box4 {
+ //박스 4개 존재
+ 
+ .grid_container {
+  display: grid;
+  grid-auto-rows: 60px;
+  grid-template-columns: repeat(3, 1fr) 4fr;
+ }
+
+```
+박스의 크기를 설정할 때 1~3번박스까지는 1fr, 4번 박스는 4fr크기를 줘라고 설정한 것. <br>
+만약 박스가 네개지만 repeat(5, 1fr)와 같이 존재하지 않는 박스의 크기를 설정해도 빈 공간으로 동일한 크기의 빈 공간이 생기게 된다.
