@@ -50,4 +50,27 @@ Ex
 grid-auto-columns는 기본적으로 row값으로 설정되어있어 column값으로 바꿔서 써야한다.(flex-direction과 비슷함)<br>
 grid-auto-flow: column 을 설정하면 column값으로 바뀌면서 column값에 자동으로 준 값이 들어간다.
 
+<br>
+<br>
+
+```
+.container{
+    grid-auto-rows: 60px;
+    grid-template-areas: "header header header" "content content sidebar" "footer footer footer"
+}
+.box1 {
+   grid-area: header // 주의 따옴표 없이 지정.
+}
+.box2 {
+   grid-area: content
+}
+.box3 {
+   grid-area: sidebar
+}
+.box4 {
+  grid-area: footer
+}
+```
+grid-template-areas는 문자로 지정한 이름값을 item에 grid-area: 이름 으로 지정해서 레이아웃을 짤 수 있다.<br>
+위의 예제에서 grid-template-ares: "header ...."로 줬기때문에 grid-area: header로 지정된 박스가 가장 상단에 그 위치에 지정된다.
 
