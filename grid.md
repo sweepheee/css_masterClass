@@ -195,3 +195,40 @@ grid-template-areas는 문자로 지정한 이름값을 item에 grid-area: 이�
 ```
 최소한의 공간만 사용하고 줄바꿈을 해버린다. rows로는 실험을 해보진 않았으나 가능하면 auto-columns를 지워야 먹힐듯.<br>
 공간을 최소한 사용하기때문에(즉, rows일 땐 column을 최소한 사용하고 줄바꿈) row가 box안의 컨텐츠 길이 만큼 늘어난다.
+<br>
+
+<h2>7. auto-fit, auto-fill </h2>
+
+<h3>7-1. auto-fit = 가능한 채움.</h3>
+
+```
+// .box1~box12
+
+ .grid_container {
+  display: grid;
+  grid-auto-rows: 60px;  
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr); 
+  // 이렇게 사용하는 방법만 기억하면 될 듯?
+
+```
+auto-fit은 정확히 이해하진 못했지만 예시와 같이 사용하면 최소 값보다 화면이 줄어들면 줄바꿈이 일어남.<br>
+즉, 쉽게 반응형페이지를 만들 수 있음. 화면이 크다면 박스를 적절히 나눠서 꽉채우고 줄바꿈이 일어나고,(최대값 1fr줬을때) <br>
+회사에서 사용할 수 있을 듯(중요!!)
+<br>
+
+<h3>7-2. auto-fill = 고스트그리드를 만들어 꽉 채우지못하면 빈공간에 맞는 크기의 그리드를 다수 만들어 채운다.</h3>
+
+```
+// .box1~box12
+
+ .grid_container {
+  display: grid;
+  grid-auto-rows: 60px;  
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr); 
+  // 이렇게 사용하는 방법만 기억하면 될 듯?
+
+```
+예시처럼 최소값을 작게 설정하고 큰 화면으로 보면 박스 하나당 50px만큼 차지하고 고스트그리드(빈공간)에 50px 박스를 다수 만들어 1fr만큼 채운다<br>
+예를들자면 박스 12개를 50px만큼 채워도 빈공간이 있으면 컬럼에 빈공간이 없어질때까지 고스트그리드가 만들어져 채우고 있다.<br>
+auto-fit은 최소값을 아무리 작게줘도 큰 화면으로 보면 1fr을 채우지만 auto-fill은 최소값을 유지하고 나머지칸을 고스트그리드로 채운다.<br>
+고스트그리드는 따로 조정하거나 건드릴 순 없다. 단지 관리자모드를 통해 확인할 수 있기만 하다.
