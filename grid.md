@@ -30,7 +30,7 @@ grid-auto-rows: 60px;
 ```
 만약 박스가 4개이상 존재할 때 값을 준 4개 박스 외의 다른 모든 박스를 표시해주고 싶다면 grid-auto-rows 값을 줘서<br>
 4번째박스를 초과하는 박스를 모두 생성할 수 있다. column값은 그대로 10px 15px가 반복되고 줄바꿈이 일어난다.<br>
-
+<br>
 
 ```
 grid-template-columns : 10px 15px
