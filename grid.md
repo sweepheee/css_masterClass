@@ -1,6 +1,10 @@
 css grid
-----
+=====
+<br>
+<br>
 
+grid-template-columns / grid-template-rows
+----
 ```
 grid-template-columns : 10px
 grid-template-rows : 10px
@@ -73,4 +77,11 @@ grid-auto-flow: column 을 설정하면 column값으로 바뀌면서 column값�
 ```
 grid-template-areas는 문자로 지정한 이름값을 item에 grid-area: 이름 으로 지정해서 레이아웃을 짤 수 있다.<br>
 위의 예제에서 grid-template-ares: "header ...."로 줬기때문에 grid-area: header로 지정된 박스가 가장 상단에 그 위치에 지정된다.
+
+
+
+
+```
+fr = fraction 가능한 자리를 차지해라
+```
 
