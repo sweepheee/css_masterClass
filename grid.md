@@ -6,7 +6,7 @@ css grid
 1. grid-template-columns / grid-template-rows
 ----
 
-<h3>1-1. 기본사용법
+<h3>1-1. 기본사용법</h3>
 
 ```
 grid-template-columns : 10px
